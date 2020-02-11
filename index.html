@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="shortcut icon" href="./img/crown.png" type="icon"> -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+</head>
+
+<body>
+    <!--=============================================== Imagen ====================================================  -->
+    <div class="img">
+        <img src="./img/pexels-photo-616849.jpeg"
+        width="280" height="400" alt="">
+    </div>
+    <div class="contenedor">
+        <!-- =============================================== Logo =====================================================  -->
+        <div class="logo">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 171 171"
+                    style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,171.99707v-171.99707h171.99707v171.99707z" fill="none"></path>
+                        <g>
+                            <path
+                                d="M85.5,140.00625c-43.46392,0 -79.84418,-48.48705 -84.18757,-54.50625c4.3434,-6.0192 40.72365,-54.50625 84.18758,-54.50625c43.46393,0 79.84418,48.48705 84.18758,54.50625c-4.3434,6.0192 -40.72365,54.50625 -84.18758,54.50625z"
+                                fill="#ffffff"></path>
+                            <path
+                                d="M85.5,32.0625c41.70049,0 76.93718,45.37485 82.8666,53.4375c-5.92942,8.06265 -41.16611,53.4375 -82.8666,53.4375c-41.70049,0 -76.93717,-45.37485 -82.8666,-53.4375c5.92943,-8.06265 41.16611,-53.4375 82.8666,-53.4375M85.5,29.925c-47.21951,0 -85.5,55.575 -85.5,55.575c0,0 38.28049,55.575 85.5,55.575c47.21951,0 85.5,-55.575 85.5,-55.575c0,0 -38.28049,-55.575 -85.5,-55.575z"
+                                fill="#3498db"></path>
+                            <path
+                                d="M85.5,122.90625c-20.62474,0 -37.40625,-16.78151 -37.40625,-37.40625c0,-20.62474 16.78151,-37.40625 37.40625,-37.40625c20.62474,0 37.40625,16.78151 37.40625,37.40625c0,20.62474 -16.78151,37.40625 -37.40625,37.40625z"
+                                fill="#3498db"></path>
+                            <path
+                                d="M85.5,49.1625c20.03693,0 36.3375,16.30058 36.3375,36.3375c0,20.03692 -16.30057,36.3375 -36.3375,36.3375c-20.03692,0 -36.3375,-16.30057 -36.3375,-36.3375c0,-20.03692 16.30058,-36.3375 36.3375,-36.3375M85.5,47.025c-21.24889,0 -38.475,17.22611 -38.475,38.475c0,21.24889 17.22611,38.475 38.475,38.475c21.24889,0 38.475,-17.22611 38.475,-38.475c0,-21.24889 -17.22611,-38.475 -38.475,-38.475z"
+                                fill="#f1c40f"></path>
+                            <path
+                                d="M85.5,68.4c-9.44407,0 -17.1,7.65593 -17.1,17.1c0,9.44407 7.65593,17.1 17.1,17.1c9.44407,0 17.1,-7.65593 17.1,-17.1c0,-9.44407 -7.65593,-17.1 -17.1,-17.1z"
+                                fill="#000000"></path>
+                            <path
+                                d="M98.325,59.85c-4.72203,0 -8.55,3.82797 -8.55,8.55c0,4.72203 3.82797,8.55 8.55,8.55c4.72203,0 8.55,-3.82797 8.55,-8.55c0,-4.72203 -3.82797,-8.55 -8.55,-8.55z"
+                                fill="#ffffff"></path>
+                        </g>
+                    </g>
+                </svg>
+            </span>
+        </div>
+        <!-- =================================================Titulos====================================================== -->
+        <div>
+            <h2 class="titulo1">Agrega un nuevo trabajo</h2>
+        </div>
+        <div class="formulario">
+            <form>
+                <input type="text" id="tarea" placeholder="Ingresa tu tarea" autocomplete="off">
+                <input type="button" onclick="newElement()" value="Agregar">
+            </form>
+        </div>
+        <!-- ============================================== Lista de tareas ===================================================== -->
+        <div class="tareas" style="overflow: auto; height: 200px;">
+            <div class="wrap">
+                <ul id="myUL" class="lista">
+                    <li>Tarea Cero</li>
+                    <li>Tarea Uno</li>
+                    <li class="checked">Tarea Dos</li>
+                    <li>Tarea Tres</li>
+                    <li>Tarea Cuatro</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/code.js"></script>
+</body>
+
+</html>

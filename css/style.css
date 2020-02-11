@@ -1,0 +1,162 @@
+/*======================================== body ===================================================*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5A23D;
+}
+
+/*======================================== logo ================================================== */
+.logo {
+    position: relative;
+    left: 150px;
+    top: -45px;
+}
+
+/*======================================== contenedor ============================================ */
+.contenedor {
+    background-color: #fbffff;
+    box-shadow: 0 2px 6px #232324;
+    border-radius: 2px;
+    margin: 50px;
+    width: 350px;
+    padding: 20px;
+    display: inline-block;
+}
+
+/*======================================== imagen ================================================= */
+.img {
+    display: inline-block;
+    margin-left: 120px;
+    margin-right: 170px;
+    margin-top: 50px;
+    box-shadow: 0 1px 6px #232324;
+    border-radius: 2px;
+}
+
+/*======================================== titulos =================================================== */
+
+.titulo1 {
+    padding: 5px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #ff9000;
+    font-family: 'Playfair Display', serif;
+}
+
+/*====================================== formulario =====================================================*/
+.formulario {
+    text-align: center;
+    padding: 5px;
+}
+
+input:focus,
+input.form-control:focus {
+
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+[type^="text"] {
+    text-transform: initial;
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    padding: 5px;
+    border: 0;
+    color: #978b7d;
+    background-color: #fbffff;
+    border-bottom: 1px solid #5f5f5f;
+}
+[type^="button"] {
+    margin: 5px;
+    font-family: 'Cinzel', serif;
+    color: gray;
+    padding: 5px;
+    width: 70px;
+    font-size: 18px;
+    background-color:rgb(156, 156, 156)y;
+    border: none;
+    border-radius: 2px;
+}
+/* #ff9000 */
+[type^="button"]:hover
+{
+    color: white;
+    background-color: rgb(112, 111, 111);
+}
+/*============================================= listas ==================================================== */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.lista li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    font-size: 18px;
+    transition: 0.3s;
+
+
+    /* hacer que los elementos de la lista no sean seleccionables */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Agrega una cebra */
+.lista li:nth-child(odd) {
+    background: #e0dfdf;
+}
+
+/* agregar hover */
+.lista li:hover
+{
+    background-color: rgb(238, 236, 236);
+}
+
+/* Al hacer clic en, agrega un color de fondo y tacha el texto */
+
+.lista li.checked
+{
+    background-color: #a79090;
+    color: #ffffff;
+    text-decoration: line-through;
+}
+
+
+/* Agregue una marca "marcada" cuando haga clic en */
+
+.lista li.checked::before
+{
+    content: '';
+    position: absolute;
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/* Aplicar estilo al botón de cerrar */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #f33224;
+    color: white;
+  }
